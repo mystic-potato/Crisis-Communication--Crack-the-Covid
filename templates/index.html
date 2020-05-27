@@ -1,0 +1,33 @@
+﻿{% load static %}
+<html>
+ <link rel="stylesheet"  href="{%static 'login.css' %}" >
+<form action="register" method="POST">
+  {% csrf_token %}
+ <header><b><h1> Register </h1></b></header>
+
+  <div class="container">
+
+    <h2><label for="name"><b>Name</b></label></h2>
+    <input type="text" placeholder="Name" name="username" required>
+
+     
+
+    <h2><label for="email"><b>Email ID</b></label></h2>
+    <input type="text" placeholder="Email ID" name="email" required>
+
+   <h2> <label for="psw"><b>Password</b></label></h2>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Submit</button>
+    <h4><a href="login"> Click here if you already have an account</a></h4>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a href="home">Cancel</a></button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</html>

@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+ <link rel="stylesheet"  href="{%static 'login.css' %}" >
+<form action="login" method="POST">
+  {% csrf_token %}
+ <header><b><h1> Continue to Login </h1></b></header>
+
+  <div class="container">
+    <h2><label for="uname"><b>Username</b></label></h2>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+   <h2> <label for="psw"><b>Password</b></label></h2>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+<h4><a href="register"> New to this website? Click here to sign up today for free !</a></h4>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a href="/">Cancel</a></button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</html>

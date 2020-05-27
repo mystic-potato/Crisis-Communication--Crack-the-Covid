@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+ <link rel="stylesheet"  href="{%static 'login.css' %}" >
+<form action="action_page.php" method="post">
+ <header><b><h1> Register </h1></b></header>
+
+  <div class="container">
+
+    <h2><label for="name"><b>Name</b></label></h2>
+    <input type="text" placeholder="Name" name="name" required>
+
+     <div class="row row-space">
+      <h2><label for="name"><b>Gender</b></label></h2>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">GENDER</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    <h2><label for="email"><b>Email ID</b></label></h2>
+    <input type="text" placeholder="Email ID" name="email" required>
+
+   <h2> <label for="psw"><b>Password</b></label></h2>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+<h4><a href="register.html"> New to this website? Click here to sign up today for free !</a></h4>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a href="welcomepage.html">Cancel</a></button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</html>
