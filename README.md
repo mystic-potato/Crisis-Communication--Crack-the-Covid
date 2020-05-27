@@ -1,5 +1,7 @@
 # Crisis-Communication--Crack-the-Covid
-A crisis communication project used for communicating necessary information to people concerned about covid-19
+A crisis communication project used for communicating necessary information to people concerned about covid-19.
+
+Website is built using HTML, CSS, Bootstrap with a Django backend
 
 
 This project needs to be run in a django environment.
