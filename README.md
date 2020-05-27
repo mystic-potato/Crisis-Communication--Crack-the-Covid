@@ -20,6 +20,6 @@ In order to run this project you must install the following packages:
 6. filelock
 	pip install filelock
 	
-Once these packages are installed, go to the hack directory and run the following:
+Once these packages are installed, go to the hack directory in command prompt and run the following:
 
 python manage.py runserver
